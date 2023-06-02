@@ -644,6 +644,104 @@
 <a href="#644" id="644">644</a>
 <a href="#645" id="645">645</a>
 <a href="#646" id="646">646</a>
+<a href="#647" id="647">647</a>
+<a href="#648" id="648">648</a>
+<a href="#649" id="649">649</a>
+<a href="#650" id="650">650</a>
+<a href="#651" id="651">651</a>
+<a href="#652" id="652">652</a>
+<a href="#653" id="653">653</a>
+<a href="#654" id="654">654</a>
+<a href="#655" id="655">655</a>
+<a href="#656" id="656">656</a>
+<a href="#657" id="657">657</a>
+<a href="#658" id="658">658</a>
+<a href="#659" id="659">659</a>
+<a href="#660" id="660">660</a>
+<a href="#661" id="661">661</a>
+<a href="#662" id="662">662</a>
+<a href="#663" id="663">663</a>
+<a href="#664" id="664">664</a>
+<a href="#665" id="665">665</a>
+<a href="#666" id="666">666</a>
+<a href="#667" id="667">667</a>
+<a href="#668" id="668">668</a>
+<a href="#669" id="669">669</a>
+<a href="#670" id="670">670</a>
+<a href="#671" id="671">671</a>
+<a href="#672" id="672">672</a>
+<a href="#673" id="673">673</a>
+<a href="#674" id="674">674</a>
+<a href="#675" id="675">675</a>
+<a href="#676" id="676">676</a>
+<a href="#677" id="677">677</a>
+<a href="#678" id="678">678</a>
+<a href="#679" id="679">679</a>
+<a href="#680" id="680">680</a>
+<a href="#681" id="681">681</a>
+<a href="#682" id="682">682</a>
+<a href="#683" id="683">683</a>
+<a href="#684" id="684">684</a>
+<a href="#685" id="685">685</a>
+<a href="#686" id="686">686</a>
+<a href="#687" id="687">687</a>
+<a href="#688" id="688">688</a>
+<a href="#689" id="689">689</a>
+<a href="#690" id="690">690</a>
+<a href="#691" id="691">691</a>
+<a href="#692" id="692">692</a>
+<a href="#693" id="693">693</a>
+<a href="#694" id="694">694</a>
+<a href="#695" id="695">695</a>
+<a href="#696" id="696">696</a>
+<a href="#697" id="697">697</a>
+<a href="#698" id="698">698</a>
+<a href="#699" id="699">699</a>
+<a href="#700" id="700">700</a>
+<a href="#701" id="701">701</a>
+<a href="#702" id="702">702</a>
+<a href="#703" id="703">703</a>
+<a href="#704" id="704">704</a>
+<a href="#705" id="705">705</a>
+<a href="#706" id="706">706</a>
+<a href="#707" id="707">707</a>
+<a href="#708" id="708">708</a>
+<a href="#709" id="709">709</a>
+<a href="#710" id="710">710</a>
+<a href="#711" id="711">711</a>
+<a href="#712" id="712">712</a>
+<a href="#713" id="713">713</a>
+<a href="#714" id="714">714</a>
+<a href="#715" id="715">715</a>
+<a href="#716" id="716">716</a>
+<a href="#717" id="717">717</a>
+<a href="#718" id="718">718</a>
+<a href="#719" id="719">719</a>
+<a href="#720" id="720">720</a>
+<a href="#721" id="721">721</a>
+<a href="#722" id="722">722</a>
+<a href="#723" id="723">723</a>
+<a href="#724" id="724">724</a>
+<a href="#725" id="725">725</a>
+<a href="#726" id="726">726</a>
+<a href="#727" id="727">727</a>
+<a href="#728" id="728">728</a>
+<a href="#729" id="729">729</a>
+<a href="#730" id="730">730</a>
+<a href="#731" id="731">731</a>
+<a href="#732" id="732">732</a>
+<a href="#733" id="733">733</a>
+<a href="#734" id="734">734</a>
+<a href="#735" id="735">735</a>
+<a href="#736" id="736">736</a>
+<a href="#737" id="737">737</a>
+<a href="#738" id="738">738</a>
+<a href="#739" id="739">739</a>
+<a href="#740" id="740">740</a>
+<a href="#741" id="741">741</a>
+<a href="#742" id="742">742</a>
+<a href="#743" id="743">743</a>
+<a href="#744" id="744">744</a>
 </pre><pre class="rust"><code><span class="kw">use </span>alloc::collections::BTreeMap;
 <span class="kw">use </span>alloc::string::String;
 
@@ -658,11 +756,15 @@
 <span class="kw">use </span>starknet_api::StarknetApiError;
 <span class="attr">#[cfg(feature = <span class="string">&quot;std&quot;</span>)]
 </span><span class="kw">use </span>starknet_core::types::{
-    DeclareTransaction <span class="kw">as </span>RPCDeclareTransaction, DeclareTransactionV1 <span class="kw">as </span>RPCDeclareTransactionV1,
-    DeclareTransactionV2 <span class="kw">as </span>RPCDeclareTransactionV2, DeployAccountTransaction <span class="kw">as </span>RPCDeployAccountTransaction,
-    InvokeTransaction <span class="kw">as </span>RPCInvokeTransaction, InvokeTransactionV0 <span class="kw">as </span>RPCInvokeTransactionV0,
-    InvokeTransactionV1 <span class="kw">as </span>RPCInvokeTransactionV1, L1HandlerTransaction <span class="kw">as </span>RPCL1HandlerTransaction,
-    Transaction <span class="kw">as </span>RPCTransaction,
+    DeclareTransaction <span class="kw">as </span>RPCDeclareTransaction, DeclareTransactionReceipt <span class="kw">as </span>RPCDeclareTransactionReceipt,
+    DeclareTransactionV1 <span class="kw">as </span>RPCDeclareTransactionV1, DeclareTransactionV2 <span class="kw">as </span>RPCDeclareTransactionV2,
+    DeployAccountTransaction <span class="kw">as </span>RPCDeployAccountTransaction,
+    DeployAccountTransactionReceipt <span class="kw">as </span>RPCDeployAccountTransactionReceipt, Event <span class="kw">as </span>RPCEvent, FieldElement,
+    InvokeTransaction <span class="kw">as </span>RPCInvokeTransaction, InvokeTransactionReceipt <span class="kw">as </span>RPCInvokeTransactionReceipt,
+    InvokeTransactionV0 <span class="kw">as </span>RPCInvokeTransactionV0, InvokeTransactionV1 <span class="kw">as </span>RPCInvokeTransactionV1,
+    L1HandlerTransaction <span class="kw">as </span>RPCL1HandlerTransaction, L1HandlerTransactionReceipt <span class="kw">as </span>RPCL1HandlerTransactionReceipt,
+    MaybePendingTransactionReceipt <span class="kw">as </span>RPCMaybePendingTransactionReceipt, Transaction <span class="kw">as </span>RPCTransaction,
+    TransactionReceipt <span class="kw">as </span>RPCTransactionReceipt, TransactionStatus <span class="kw">as </span>RPCTransactionStatus,
 };
 <span class="kw">use </span>thiserror_no_std::Error;
 
@@ -825,6 +927,31 @@
     </span><span class="kw">pub </span>max_fee: Felt252Wrapper,
 }
 
+<span class="kw">impl </span>DeclareTransaction {
+    <span class="doccomment">/// converts the transaction to a [Transaction] object
+    </span><span class="kw">pub fn </span>from_declare(<span class="self">self</span>, chain_id: <span class="kw-2">&amp;</span>str) -&gt; Transaction {
+        Transaction {
+            tx_type: TxType::Declare,
+            version: <span class="self">self</span>.version,
+            hash: calculate_declare_tx_hash(<span class="self">self</span>.clone(), chain_id),
+            signature: <span class="self">self</span>.signature,
+            sender_address: <span class="self">self</span>.sender_address,
+            nonce: <span class="self">self</span>.nonce,
+            call_entrypoint: CallEntryPointWrapper::new(
+                <span class="prelude-val">Some</span>(<span class="self">self</span>.compiled_class_hash),
+                EntryPointTypeWrapper::External,
+                <span class="prelude-val">None</span>,
+                BoundedVec::default(),
+                <span class="self">self</span>.sender_address,
+                <span class="self">self</span>.sender_address,
+            ),
+            contract_class: <span class="prelude-val">Some</span>(<span class="self">self</span>.contract_class),
+            contract_address_salt: <span class="prelude-val">None</span>,
+            max_fee: <span class="self">self</span>.max_fee,
+        }
+    }
+}
+
 <span class="doccomment">/// Deploy account transaction.
 </span><span class="attr">#[derive(
     Clone,
@@ -855,6 +982,31 @@
     </span><span class="kw">pub </span>account_class_hash: Felt252Wrapper,
     <span class="doccomment">/// Max fee.
     </span><span class="kw">pub </span>max_fee: Felt252Wrapper,
+}
+
+<span class="kw">impl </span>DeployAccountTransaction {
+    <span class="doccomment">/// converts the transaction to a [Transaction] object
+    </span><span class="kw">pub fn </span>from_deploy(<span class="self">self</span>, chain_id: <span class="kw-2">&amp;</span>str) -&gt; Transaction {
+        Transaction {
+            tx_type: TxType::DeployAccount,
+            version: <span class="self">self</span>.version,
+            hash: calculate_deploy_account_tx_hash(<span class="self">self</span>.clone(), chain_id),
+            signature: <span class="self">self</span>.signature,
+            sender_address: <span class="self">self</span>.sender_address,
+            nonce: <span class="self">self</span>.nonce,
+            call_entrypoint: CallEntryPointWrapper::new(
+                <span class="prelude-val">Some</span>(<span class="self">self</span>.account_class_hash),
+                EntryPointTypeWrapper::External,
+                <span class="prelude-val">None</span>,
+                <span class="self">self</span>.calldata,
+                <span class="self">self</span>.sender_address,
+                <span class="self">self</span>.sender_address,
+            ),
+            contract_class: <span class="prelude-val">None</span>,
+            contract_address_salt: <span class="prelude-val">Some</span>(<span class="self">self</span>.salt),
+            max_fee: <span class="self">self</span>.max_fee,
+        }
+    }
 }
 
 <span class="doccomment">/// Error of conversion between [DeclareTransaction], [InvokeTransaction],
@@ -927,6 +1079,31 @@
     }
 }
 
+<span class="kw">impl </span>InvokeTransaction {
+    <span class="doccomment">/// converts the transaction to a [Transaction] object
+    </span><span class="kw">pub fn </span>from_invoke(<span class="self">self</span>, chain_id: <span class="kw-2">&amp;</span>str) -&gt; Transaction {
+        Transaction {
+            tx_type: TxType::Invoke,
+            version: <span class="self">self</span>.version,
+            hash: calculate_invoke_tx_hash(<span class="self">self</span>.clone(), chain_id),
+            signature: <span class="self">self</span>.signature,
+            sender_address: <span class="self">self</span>.sender_address,
+            nonce: <span class="self">self</span>.nonce,
+            call_entrypoint: CallEntryPointWrapper::new(
+                <span class="prelude-val">None</span>,
+                EntryPointTypeWrapper::External,
+                <span class="prelude-val">None</span>,
+                <span class="self">self</span>.calldata,
+                <span class="self">self</span>.sender_address,
+                <span class="self">self</span>.sender_address,
+            ),
+            contract_class: <span class="prelude-val">None</span>,
+            contract_address_salt: <span class="prelude-val">None</span>,
+            max_fee: <span class="self">self</span>.max_fee,
+        }
+    }
+}
+
 <span class="doccomment">/// Representation of a Starknet transaction.
 </span><span class="attr">#[derive(
     Clone,
@@ -975,77 +1152,6 @@
             account_class_hash: value.call_entrypoint.class_hash.ok_or(TransactionConversionError::MissingClassHash)<span class="question-mark">?</span>,
             max_fee: value.max_fee,
         })
-    }
-}
-
-<span class="kw">impl </span>From&lt;InvokeTransaction&gt; <span class="kw">for </span>Transaction {
-    <span class="kw">fn </span>from(value: InvokeTransaction) -&gt; <span class="self">Self </span>{
-        <span class="self">Self </span>{
-            tx_type: TxType::Invoke,
-            version: value.version,
-            hash: calculate_invoke_tx_hash(value.clone()),
-            signature: value.signature,
-            sender_address: value.sender_address,
-            nonce: value.nonce,
-            call_entrypoint: CallEntryPointWrapper::new(
-                <span class="prelude-val">None</span>,
-                EntryPointTypeWrapper::External,
-                <span class="prelude-val">None</span>,
-                value.calldata,
-                value.sender_address,
-                value.sender_address,
-            ),
-            contract_class: <span class="prelude-val">None</span>,
-            contract_address_salt: <span class="prelude-val">None</span>,
-            max_fee: value.max_fee,
-        }
-    }
-}
-<span class="kw">impl </span>From&lt;DeclareTransaction&gt; <span class="kw">for </span>Transaction {
-    <span class="kw">fn </span>from(value: DeclareTransaction) -&gt; <span class="self">Self </span>{
-        <span class="self">Self </span>{
-            tx_type: TxType::Declare,
-            version: value.version,
-            hash: calculate_declare_tx_hash(value.clone()),
-            signature: value.signature,
-            sender_address: value.sender_address,
-            nonce: value.nonce,
-            call_entrypoint: CallEntryPointWrapper::new(
-                <span class="prelude-val">Some</span>(value.compiled_class_hash),
-                EntryPointTypeWrapper::External,
-                <span class="prelude-val">None</span>,
-                BoundedVec::default(),
-                value.sender_address,
-                value.sender_address,
-            ),
-            contract_class: <span class="prelude-val">Some</span>(value.contract_class),
-            contract_address_salt: <span class="prelude-val">None</span>,
-            max_fee: value.max_fee,
-        }
-    }
-}
-
-<span class="kw">impl </span>From&lt;DeployAccountTransaction&gt; <span class="kw">for </span>Transaction {
-    <span class="kw">fn </span>from(value: DeployAccountTransaction) -&gt; <span class="self">Self </span>{
-        <span class="self">Self </span>{
-            tx_type: TxType::DeployAccount,
-            version: value.version,
-            hash: calculate_deploy_account_tx_hash(value.clone()),
-            signature: value.signature,
-            sender_address: value.sender_address,
-            nonce: value.nonce,
-            call_entrypoint: CallEntryPointWrapper::new(
-                <span class="prelude-val">Some</span>(value.account_class_hash),
-                EntryPointTypeWrapper::External,
-                <span class="prelude-val">None</span>,
-                value.calldata,
-                value.sender_address,
-                value.sender_address,
-            ),
-            contract_class: <span class="prelude-val">None</span>,
-            contract_address_salt: <span class="prelude-val">Some</span>(value.salt),
-            max_fee: value.max_fee,
-        }
     }
 }
 
@@ -1204,6 +1310,83 @@
     </span><span class="kw">pub </span>events: BoundedVec&lt;EventWrapper, MaxArraySize&gt;,
 }
 
+<span class="attr">#[cfg(feature = <span class="string">&quot;std&quot;</span>)]
+</span><span class="kw">impl </span>TransactionReceiptWrapper {
+    <span class="doccomment">/// Converts a [`TransactionReceiptWrapper`] to [`RPCMaybePendingTransactionReceipt`].
+    ///
+    /// This conversion is done in a function and not `From` trait due to the need
+    /// to pass some arguments like the [`RPCTransactionStatus`] which is unknown
+    /// in the [`TransactionReceiptWrapper`].
+    ///
+    /// Maybe extended later for other missing fields like messages sent to L1
+    /// and the contract class for the deploy.
+    </span><span class="kw">pub fn </span>into_maybe_pending_transaction_receipt(
+        <span class="self">self</span>,
+        status: RPCTransactionStatus,
+    ) -&gt; RPCMaybePendingTransactionReceipt {
+        <span class="kw">let </span>transaction_hash = <span class="self">self</span>.transaction_hash.into();
+        <span class="kw">let </span>actual_fee = <span class="self">self</span>.actual_fee.into();
+        <span class="kw">let </span>status = status;
+        <span class="kw">let </span>block_hash = <span class="self">self</span>.block_hash.into();
+        <span class="kw">let </span>block_number = <span class="self">self</span>.block_number;
+        <span class="kw">let </span>events = <span class="self">self</span>.events.iter().map(|e| (<span class="kw-2">*</span>e).clone().into()).collect();
+
+        <span class="comment">// TODO: from where those message must be taken?
+        </span><span class="kw">let </span>messages_sent = <span class="macro">vec!</span>[];
+
+        <span class="kw">match </span><span class="self">self</span>.tx_type {
+            TxType::DeployAccount =&gt; {
+                RPCMaybePendingTransactionReceipt::Receipt(RPCTransactionReceipt::DeployAccount(
+                    RPCDeployAccountTransactionReceipt {
+                        transaction_hash,
+                        actual_fee,
+                        status,
+                        block_hash,
+                        block_number,
+                        messages_sent,
+                        events,
+                        <span class="comment">// TODO: from where can I get this one?
+                        </span>contract_address: FieldElement::ZERO,
+                    },
+                ))
+            }
+            TxType::Declare =&gt; RPCMaybePendingTransactionReceipt::Receipt(RPCTransactionReceipt::Declare(
+                RPCDeclareTransactionReceipt {
+                    transaction_hash,
+                    actual_fee,
+                    status,
+                    block_hash,
+                    block_number,
+                    messages_sent,
+                    events,
+                },
+            )),
+            TxType::Invoke =&gt; {
+                RPCMaybePendingTransactionReceipt::Receipt(RPCTransactionReceipt::Invoke(RPCInvokeTransactionReceipt {
+                    transaction_hash,
+                    actual_fee,
+                    status,
+                    block_hash,
+                    block_number,
+                    messages_sent,
+                    events,
+                }))
+            }
+            TxType::L1Handler =&gt; RPCMaybePendingTransactionReceipt::Receipt(RPCTransactionReceipt::L1Handler(
+                RPCL1HandlerTransactionReceipt {
+                    transaction_hash,
+                    actual_fee,
+                    status,
+                    block_hash,
+                    block_number,
+                    messages_sent,
+                    events,
+                },
+            )),
+        }
+    }
+}
+
 <span class="doccomment">/// Representation of a Starknet event.
 </span><span class="attr">#[derive(
     Clone,
@@ -1223,6 +1406,19 @@
     </span><span class="kw">pub </span>data: BoundedVec&lt;Felt252Wrapper, MaxArraySize&gt;,
     <span class="doccomment">/// The address that emitted the event
     </span><span class="kw">pub </span>from_address: ContractAddressWrapper,
+    <span class="doccomment">/// The hash of the transaction that emitted the event
+    </span><span class="kw">pub </span>transaction_hash: Felt252Wrapper,
+}
+
+<span class="attr">#[cfg(feature = <span class="string">&quot;std&quot;</span>)]
+</span><span class="kw">impl </span>From&lt;EventWrapper&gt; <span class="kw">for </span>RPCEvent {
+    <span class="kw">fn </span>from(value: EventWrapper) -&gt; <span class="self">Self </span>{
+        <span class="self">Self </span>{
+            from_address: value.from_address.into(),
+            keys: value.keys.iter().map(|k| (<span class="kw-2">*</span>k).into()).collect(),
+            data: value.data.iter().map(|d| (<span class="kw-2">*</span>d).into()).collect(),
+        }
+    }
 }
 
 <span class="doccomment">/// This struct wraps the \[TransactionExecutionInfo\] type from the blockifier.
